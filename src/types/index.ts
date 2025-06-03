@@ -13,11 +13,4 @@ export interface Movie {
     status: string;
     avarageRating?: number | null; // Optional field for average rating
 }
-
-export interface Rating {
-    ratingId: number;
-    movieId: number;
-    userId: string;
-    rating: number;
-    timestamp: string;
-}
+    

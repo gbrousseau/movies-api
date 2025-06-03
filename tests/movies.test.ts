@@ -1,5 +1,6 @@
-const request = require('supertest');
-const app = require('../src/app').default;
+import { describe, it, expect } from '@jest/globals';
+import request from 'supertest';
+import app from '../dist/app.js';
 
 describe('Movies API', () => {
     describe('GET /api/movies', () => {
@@ -20,7 +21,6 @@ describe('Movies API', () => {
 
     describe('GET /api/movies/:movieId', () => {
         it('should return movie details for a valid movieId', async () => {
-            // You may want to use a known movieId from your test DB
             const movieId = 1;
             const res = await request(app).get(`/api/movies/${movieId}`);
             // Accept 200 or 404 depending on DB contents

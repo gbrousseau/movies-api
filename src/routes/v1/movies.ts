@@ -4,7 +4,6 @@ import {
     getMovieDetails,
     getMoviesByGenre,
     getMoviesByYear,
-    // import other controllers as needed
 } from '../../controllers/movies.js';
 
 const router = Router();

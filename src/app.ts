@@ -1,12 +1,12 @@
 import express from 'express';
-import moviesRouter from './routes/v1/movies.js';
+import router from './routes/v1/movies.js';
 
 const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use('/api/movies', moviesRouter);
+app.use('/api/movies', router);
 
 app.get('/', (req, res) => {
     res.send('Welcome to the Movie API!');
