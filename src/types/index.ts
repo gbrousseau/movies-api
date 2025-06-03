@@ -1,4 +1,3 @@
-// src/types/index.ts
 export interface Movie {
     movieId: number;
     imdbId: string;

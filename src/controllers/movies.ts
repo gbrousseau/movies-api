@@ -1,7 +1,11 @@
 import { Request, Response } from 'express';
 import path from 'path';
 import sqlite3 from 'sqlite3';
-import { Movie } from '../types';
+import { Movie } from '../types/index.js';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const MOVIES_DB_PATH = path.join(__dirname, '../../db/movies.db');
 const RATINGS_DB_PATH = path.join(__dirname, '../../db/ratings.db');

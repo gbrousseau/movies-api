@@ -5,9 +5,7 @@ import {
     getMoviesByGenre,
     getMoviesByYear,
     // import other controllers as needed
-} from '../../controllers/movies';
-import { get } from 'http';
-// import { openDb } from '../../db'; // Uncomment if you have a db utility function
+} from '../../controllers/movies.js';
 
 const router = Router();
 
