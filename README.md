@@ -100,6 +100,17 @@ AC:
 6. **Access the API**
 
     The API will be available at `http://localhost:3000` (or the port specified in your configuration).
+    ## API Endpoints
+
+    | Method | Endpoint                      | Description                                 |
+    |--------|-------------------------------|---------------------------------------------|
+    | GET    | `/api/movies`                     | List all movies (paginated)                 |
+    | GET    | `/api/movies/:movieId`            | Get details for a specific movie            |
+    | GET    | `/api/movies/year/:year`          | List movies from a particular year          |
+    | GET    | `/api/movies/genre/:genre`        | List movies by genre                        |
+
+    **Query Parameters:**
+    - `page` (optional): Specify the page number for paginated results (default: 1)
 
 7. **Run tests**
 
